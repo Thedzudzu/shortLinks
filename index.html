@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="0; url=https://t.me/dtyzdtyz">
+  <script>
+    var redirects = {
+      "telegram": "https://t.me/dtyzdtyz",
+      "тгк": "https://t.me/dtyzdtyz",
+      "server-chichi": "https://discord.gg/3wzj94mBmx",
+      "дискорд-сч": "https://discord.gg/3wzj94mBmx"
+    };
+
+    var path = window.location.pathname.split('/').pop();
+
+    if (redirects[path]) {
+      window.location.replace(redirects[path]);
+    } else {
+      document.write("<p>Такая ссылка не найдена</p>");
+    }
+  </script>
 </head>
 <body>
-  <p>Перенаправление...</p>
 </body>
 </html>
